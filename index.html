@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+    <script src="https://kit.fontawesome.com/a10b6f4a52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/asset/css/media.css">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/style-main.css">
+    <link rel="stylesheet" href="/asset/css/buttom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+
+                <!--ข้อความหลักอันใหญ่-->
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Sara</span>
+                        <br> Alisara Harvey <br>From Thailand
+                    </h1>
+
+                </div>
+
+                <div class="space-from-top"></div>
+                <a href="#about" class="scroll-link">
+                    <button class="cta">
+                        <span>About me and Portfolio</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </a>
+
+                <span class="space-from-left"></span>
+
+                <!-- <a href="#portfolio" class="scroll-link">
+                    <button class="cta-hero">
+                        <span>Portfolio</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                </a> -->
+
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about" class="section">
+        <div class="container-hero">
+            <div class="about-container">
+
+                <div class="about-left">
+                    <img class="image-about" src="/asset/image/me๘.jpg" alt="About Me">
+                </div>
+
+                <div class="about-right">
+                    <h1 class="subtitle">About Me</h1>
+                    <div class="container-about-text">
+                        <p>
+                            Hello! I'm Alisara Harvey, from Thailand.
+                            Currently studying at Satriwitaya 2 School.
+                            In the English-Social program.
+                            I want the university to see my intentions. Even though I've never learned to code before,
+                            I want to show you my passion, interest, determination, and willingness to learn to code.
+                            My interest lies in IT (Information Technology)
+                            at King Mongkut Institute of Technology Ladkrabang University.
+                        </p>
+                    </div>
+
+
+                    <div class="tabtitle">
+                        <p class="tab-links active-buttom-tab" onclick="toggleTab('skills', this)">Skills</p>
+                        <p class="tab-links" onclick="toggleTab('experience', this)">Experience</p>
+                        <p class="tab-links" onclick="toggleTab('education', this)">Education</p>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Take a photo by digital camera.</span></li>
+                            <li><span>Speak English fluently.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>I passed the training course Building Fundamental AI Models.</span></li>
+                            <li><span>Staff parade SW2 Sport Day 2023.</span></li>
+                            <li><span>Delegate of the class for Teachers' Day ceremony.</span></li>
+                            <li><span>Played the main character in a YouTube music video.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Chokchai Primary School</span> - Grades 1-6</li>
+                            <li><span>Satriwitaya 2 School</span> - Mathayom 1-3</li>
+                            <li><span>Satriwitaya 2 School</span> - Mathayom 4-6</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="section">
+        <div class="container-hero">
+            <div class="port-container">
+
+                <div class="about-left">
+                    <div class="image-about-hero">
+                        <div class="container-canva-hero">
+
+                            <iframe src="https://www.canva.com/design/DAGVVTcDixg/n2i2LflOQOPDKWTM0s3DVw/view?embed"
+                                allow="fullscreen" frameborder="0"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="port-hero">
+                        <h1 class="subtitle">Portfolio</h1>
+                        <div class="container-about-text">
+                            <p>
+                                This portfolio was created to offer informations about my profiles, knowledge, ability,
+                                developement and
+                                activities. It consists my pictures and memories while I was participating in the
+                                activities. I hope my portfolio can present
+                                my ability and my identity informatively. I would like to thank to my parents, my
+                                teachers, my friends and everyone who helps me and advices me
+                                to created this portfolio.
+                            </p>
+                        </div>
+                        <div class="port-buttom">
+                            <a href="https://www.canva.com/design/DAGVVTcDixg/n2i2LflOQOPDKWTM0s3DVw/edit?utm_content=DAGVVTcDixg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                class="btn" target="_blank">Go to canva website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="container-hero">
+            <div class="about-container">
+
+                <div class="about-left">
+                    <div class="image-frame">
+                        <div class="slideshow-container">
+                            <div class="slide">
+                                <img src="/asset/image/contact1.png" alt="Contact 1">
+                            </div>
+                            <div class="slide">
+                                <img src="/asset/image/contact2.png" alt="Contact 2">
+                            </div>
+                            <div class="slide">
+                                <img src="/asset/image/contact3.png" alt="Contact 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <div class="container-about-text">
+                        <p><i class="fa-solid fa-paper-plane"></i>itzsaraharvey@gmail.com</p>
+                        <p><i class="fa-paper-plane"></i>(66+) 922700309</p>
+
+                        <div class="icon-social">
+                            <div class="social-icon">
+
+                                <a href="https://www.facebook.com/alisara.harvy/"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/iiamsarah_/"><i
+                                        class="fa-brands fa-square-instagram"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleTab(tabId, tabElement) {
+            const tabs = document.querySelectorAll('.tab-contents');
+            tabs.forEach((tab) => {
+                tab.classList.remove('active-tab');
+            });
+
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active-tab');
+
+            const allTabLinks = document.querySelectorAll('.tab-links');
+            allTabLinks.forEach((tabLink) => {
+                tabLink.classList.remove('active-buttom-tab');
+            });
+
+            tabElement.classList.add('active-buttom-tab');
+        }
+
+        window.onload = function () {
+            const defaultTab = document.querySelector('.tab-links');
+            toggleTab('skills', defaultTab);
+        };
+    </script>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            const offset = -currentIndex * 100;
+            document.querySelector('.slideshow-container').style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showNextSlide, 4000);
+    </script>
+
+
+</body>
+
+</html>
